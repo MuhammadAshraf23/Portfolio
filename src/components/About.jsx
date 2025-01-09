@@ -7,7 +7,7 @@ export default function About() {
       {/* Image Section */}
       <div className="flex-1 flex justify-center">
         <img
-          src="/Profile picture.png" // Replace with your image path
+          src="/Profile picture.png" 
           alt="Muhammad Ashraf"
           className="rounded-full shadow-lg w-72 h-72 object-cover"
         />

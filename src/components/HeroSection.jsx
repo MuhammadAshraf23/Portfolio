@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
@@ -18,27 +17,29 @@ export default function HeroSection() {
           Hi, I'm Muhammad Ashraf
         </h1>
         <p className="text-lg md:text-xl mb-6">
-          A passionate front-end developer skilled in building stunning web
-          experiences using Next.js and Framer Motion.
+        A passionate <span className="text-blue-500">MERN Stack Developer</span> dedicated to creating efficient, responsive, and visually stunning web applications. 
         </p>
-
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start gap-4 mb-6">
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/muhammadashraf23"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400 text-2xl"
+            className="hover:text-blue-400 text-2xl border-none"
           >
-            <FaLinkedin />
+           <Image src="/images/linkedin.svg" 
+            width={40}
+            height={40}/>
           </a>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/muhammadashraf23"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-gray-200 text-2xl"
           >
-            <FaGithub />
+            <Image src="/images/skills/github-color.svg" 
+             width={40}
+             height={40}/>
           </a>
           
         </div>
@@ -73,7 +74,7 @@ export default function HeroSection() {
         transition={{ duration: 1 }}
       >
         <Image
-          src="/Profile picture (1).png"
+          src="/images/Profile picture.png"
           alt="Muhammad Ashraf"
           width={400}
           height={400}
