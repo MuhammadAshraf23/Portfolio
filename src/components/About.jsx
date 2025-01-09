@@ -2,12 +2,12 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-900 text-white px-6 md:px-20 py-20"
+      className="min-h-screen flex flex-col justify-center items-center text-white px-6 md:px-20 py-20"
     >
       {/* Image Section */}
       <div className="flex-1 flex justify-center">
         <img
-          src="/Profile picture.png" 
+          src="/images/Profile picture.png" 
           alt="Muhammad Ashraf"
           className="rounded-full shadow-lg w-72 h-72 object-cover"
         />

@@ -3,7 +3,7 @@ import { skills } from '@/data/skills';
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-12 bg-gray-100">
+    <section id="skills" className="py-12  text-white">
       <h2 className="text-center text-3xl font-bold mb-8">Skills</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
         {skills.map((skill) => (
@@ -14,7 +14,7 @@ const SkillsSection = () => {
                 alt={skill.name}
                 width={64}
                 height={64}
-                className="object-contain"
+                className="object-contain rounded-full bg-white"
               />
             </div>
             <p className="text-sm font-medium">{skill.name}</p>

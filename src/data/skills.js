@@ -6,6 +6,7 @@ export const skills = [
     { name: 'Tailwind CSS', src: '/images/skills/tailwindcss-color.svg' },
     { name: 'Firebase', src: '/images/skills/firebase-color.svg' },
     { name: 'React', src: '/images/skills/react-color.svg' },
+    { name: 'Next.js', src: '/images/skills/nextdotjs-color.svg' },
     { name: 'Node.js', src: '/images/skills/nodedotjs-color.svg' },
     { name: 'Express.js', src: '/images/skills/express-color.svg' },
     { name: 'MongoDB', src: '/images/skills/mongodb-color.svg' },

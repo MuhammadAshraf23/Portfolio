@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react"; // Import useState for toggling the menu
-
+import Image from "next/image";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,10 +15,17 @@ export default function Navbar() {
       className="flex justify-between items-center p-4 bg-gray-800 text-white"
     >
       {/* Logo Section */}
-      <div className="text-2xl font-bold">MyPortfolio</div>
+      <div className="text-2xl font-bold">
+        <Image
+        src="/images/logo.png"
+        alt="logo"
+        width={45}
+        height={45}
+        className="rounded "/>
+      </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex space-x-6">
+      <ul className="hidden md:flex space-x-6 text-xl font-bold">
         <li>
           <Link href="#about">About</Link>
         </li>

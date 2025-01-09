@@ -8,13 +8,16 @@ import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-gray-900">
       <HeroSection />
-      <hr />
+      <hr  className="mt-3"/>
       <About />
+      <hr/>
       <SkillsSection/>
+      <hr/>
       <Projects />
+      <hr/>
       <Experience />
-    </>
+    </div>
   );
 }

@@ -5,10 +5,25 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between h-screen bg-gray-900 text-white px-6 md:px-20">
+    <section className="flex flex-col items-center justify-between text-white px-6 md:px-20">
+        {/* Image Section */}
+        <motion.div
+        className="flex-2 flex items-center justify-center"
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <Image
+          src="/images/Profile picture.png"
+          alt="Muhammad Ashraf"
+          width={300}
+          height={300}
+          className="rounded-full shadow-lg"
+        />
+      </motion.div>
       {/* Text Section */}
       <motion.div
-        className="flex-1 text-center md:text-left"
+        className="flex-1 text-center md:text-left mt-8 md:mt-0"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -17,7 +32,7 @@ export default function HeroSection() {
           Hi, I'm Muhammad Ashraf
         </h1>
         <p className="text-lg md:text-xl mb-6">
-        A passionate <span className="text-blue-500">MERN Stack Developer</span> dedicated to creating efficient, responsive, and visually stunning web applications. 
+          A passionate <span className="text-blue-500">MERN Stack Developer</span> dedicated to creating efficient, responsive, and visually stunning web applications.
         </p>
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start gap-4 mb-6">
@@ -27,9 +42,13 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="hover:text-blue-400 text-2xl border-none"
           >
-           <Image src="/images/linkedin.svg" 
-            width={40}
-            height={40}/>
+            <Image
+              src="/images/linkedin.svg"
+              width={40}
+              height={40}
+              alt="linkedin"
+              className="bg-white rounded"
+            />
           </a>
           <a
             href="https://github.com/muhammadashraf23"
@@ -37,11 +56,14 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-gray-200 text-2xl"
           >
-            <Image src="/images/skills/github-color.svg" 
-             width={40}
-             height={40}/>
+            <Image
+              src="/images/skills/github-color.svg"
+              width={40}
+              height={40}
+              alt="github"
+              className="bg-white rounded-full"
+            />
           </a>
-          
         </div>
 
         {/* Buttons */}
@@ -66,22 +88,7 @@ export default function HeroSection() {
         </div>
       </motion.div>
 
-      {/* Image Section */}
-      <motion.div
-        className="flex-2 flex items-center justify-center mt-10 md:mt-0"
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <Image
-          src="/images/Profile picture.png"
-          alt="Muhammad Ashraf"
-          width={400}
-          height={400}
-          className="rounded-full shadow-lg"
-        />
-      </motion.div>
-      
+    
     </section>
   );
 }
