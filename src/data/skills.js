@@ -2,8 +2,8 @@
 export const skills = [
     { name: 'HTML', src: '/images/skills/html5-color.svg' },
     { name: 'CSS', src: '/images/skills/css3-color.svg' },
-    { name: 'JavaScript', src: '/images/skills/javascript-color.svg' },
     { name: 'Tailwind CSS', src: '/images/skills/tailwindcss-color.svg' },
+    { name: 'JavaScript', src: '/images/skills/javascript-color.svg' },
     { name: 'Firebase', src: '/images/skills/firebase-color.svg' },
     { name: 'React', src: '/images/skills/react-color.svg' },
     { name: 'Next.js', src: '/images/skills/nextdotjs-color.svg' },
