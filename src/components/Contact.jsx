@@ -1,6 +1,6 @@
-"use client"
-import React, { useState } from "react";
-import { contact } from "@/data/contact";
+'use client'
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,99 +13,31 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic, e.g., send to an API
-    console.log("Form submitted:", formData);
-    alert("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" }); // Reset form
-  };
-
   return (
-    <section id="contact" className="py-12 text-white">
+    <motion.section
+      id="contact"
+      className="py-12 text-white"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Contact</h2>
         <div className="flex flex-col lg:flex-row lg:space-x-12 items-start">
-          {/* Contact Links */}
-          <div className="flex flex-col items-start space-y-6 w-full lg:w-1/2">
-            {/* Email */}
-            <div className="flex items-center space-x-3">
-              <img
-                src="/images/gmail-color.svg"
-                alt="Email Icon"
-                className="h-6 w-6"
-              />
-              <a
-                href={`mailto:${contact.email}`}
-                className="text-lg text-blue-600"
-              >
-                {contact.email}
-              </a>
-            </div>
-
-            {/* LinkedIn */}
-            <div className="flex items-center space-x-3">
-              <img
-                src="/images/linkedin.svg"
-                alt="LinkedIn Icon"
-                className="h-6 w-6"
-              />
-              <a
-                href={contact.linkedin}
-                className="text-lg text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </div>
-
-            {/* GitHub */}
-            <div className="flex items-center space-x-3">
-              <img
-                src="/images/skills/github-color.svg"
-                alt="GitHub Icon"
-                className="h-8 w-8 bg-white rounded-full"
-              />
-              <a
-                href={contact.github}
-                className="text-lg text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-
-            {/* Portfolio */}
-            <div className="flex items-center space-x-3">
-              <img
-                src="/images/logo.png"
-                alt="Portfolio Icon"
-                className="h-6 w-6"
-              />
-              <a
-                href={contact.portfolio}
-                className="text-lg text-blue-600"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Portfolio
-              </a>
-            </div>
-          </div>
-
           {/* Contact Form */}
-          <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+          <motion.div
+            className="w-full lg:w-1/2 mt-8 lg:mt-0"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
             <form
-              onSubmit={handleSubmit}
+              action="https://formspree.io/f/xovvrdzj" 
+              method="POST"
               className="bg-gray-800 p-6 rounded shadow-md space-y-4"
             >
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium mb-1"
-                >
+                <label htmlFor="name" className="block text-sm font-medium mb-1">
                   Name
                 </label>
                 <input
@@ -119,10 +51,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium mb-1"
-                >
+                <label htmlFor="email" className="block text-sm font-medium mb-1">
                   Email
                 </label>
                 <input
@@ -159,10 +88,10 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -21,7 +21,7 @@ export default function Navbar() {
         alt="logo"
         width={45}
         height={45}
-        className="rounded "/>
+        className="rounded w-auto h-auto"/>
       </div>
 
       {/* Desktop Menu */}

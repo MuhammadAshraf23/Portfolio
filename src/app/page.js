@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
@@ -25,6 +26,8 @@ export default function Home() {
       <Education />
       <hr/>
       <Contact />
+      <hr />
+      <Footer />
       <ScrollToTopButton />
     </div>
   );

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-
 export default function HeroSection() {
   return (
     <section className="flex md:h-[90vh] lg:h-[80vh]  max-md:flex-col items-center justify-between text-white px-6 md:px-20 max-sm:px-2 pt-20" >
@@ -79,7 +78,7 @@ export default function HeroSection() {
           <motion.a
             href="/resume.pdf"
             download
-            className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700"
+            className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
