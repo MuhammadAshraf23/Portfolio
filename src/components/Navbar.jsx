@@ -12,7 +12,7 @@ export default function Navbar() {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex justify-between items-center p-4 bg-gray-800 text-white"
+      className="flex justify-between items-center p-4 bg-gray-800 text-white fixed w-full z-50"
     >
       {/* Logo Section */}
       <div className="text-2xl font-bold">

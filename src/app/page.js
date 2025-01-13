@@ -6,6 +6,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       <Education />
       <hr/>
       <Contact />
+      <ScrollToTopButton />
     </div>
   );
 }

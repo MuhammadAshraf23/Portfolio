@@ -9,7 +9,7 @@ export default function About() {
         <img
           src="/images/Profile picture.png" 
           alt="Muhammad Ashraf"
-          className="rounded-full shadow-lg w-72 h-72 object-cover"
+          className="rounded-full shadow-lg w-72 h-72 object-cover max-sm:w-52 max-sm:h-52"
         />
       </div>
 

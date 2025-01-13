@@ -5,6 +5,11 @@ export const education = [
       year: "2021 - Present",
     },
     {
+      degree: "Intermediate",
+      provider: "Govt. Islamia Science College",
+      year: "2023",
+    },
+    {
       certification: "MERN Stack Developer",
       provider: "Saylani Mass IT Training Program",
       year: "2023",

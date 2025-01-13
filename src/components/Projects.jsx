@@ -1,15 +1,34 @@
+import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
 
 const Projects = () => {
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.2,
+        type: "spring",
+        stiffness: 50,
+      },
+    }),
+  };
+
   return (
     <section id="projects" className="py-10 text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6 text-center">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow"
+              variants={cardVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              custom={index}
             >
               {/* Project Image */}
               <img
@@ -22,7 +41,9 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-700 mb-4">{project.description}</p>
                 <div className="mb-4">
-                  <span className="text-sm font-medium text-gray-600">Technologies:</span>
+                  <span className="text-sm font-medium text-gray-600">
+                    Technologies:
+                  </span>
                   <ul className="flex flex-wrap gap-2 mt-1">
                     {project.technologies.map((tech, i) => (
                       <li
@@ -53,7 +74,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
