@@ -4,7 +4,7 @@ export const projects = [
     description:
       "An online store built with Next.js and Firebase, featuring dynamic cart management, secure user authentication, and a responsive UI.",
     technologies: ["Next.js", "Firebase", "Redux", "TailwindCSS"],
-    liveDemo: "https://baltistan-baking-grocery.vercel.app/",
+    liveDemo: "https://baltistanbakingstore.vercel.app/",
     github: "https://github.com/MuhammadAshraf23/Baltistan-baking-Grocery",
     image: "/images/store.png",
   },
