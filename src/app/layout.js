@@ -1,6 +1,8 @@
+// app/layout.js or your layout file
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import ThemeClient from "./ThemeClient"; // Import ThemeClient
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +17,8 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Muhammad Ashraf | MERN Stack Developer Portfolio",
-  description: "Explore the portfolio of Muhammad Ashraf, a passionate MERN stack developer. Discover projects, skills, and experience in building stunning web applications using React, Next.js, and more.",
+  description:
+    "Explore the portfolio of Muhammad Ashraf, a passionate MERN stack developer. Discover projects, skills, and experience in building stunning web applications using React, Next.js, and more.",
 };
 
 export default function RootLayout({ children }) {
@@ -24,8 +27,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        {children}
+        {/* Wrap your entire content with ThemeClient */}
+        <ThemeClient>
+          <Navbar />
+          {children}
+        </ThemeClient>
       </body>
     </html>
   );

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react"; // Import useState for toggling the menu
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -37,6 +38,9 @@ export default function Navbar() {
         </li>
         <li>
           <Link href="#experience">Experience</Link>
+        </li>
+        <li>
+          <ThemeToggle />
         </li>
       </ul>
 

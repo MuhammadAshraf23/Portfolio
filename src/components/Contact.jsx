@@ -23,10 +23,10 @@ const Contact = () => {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Contact</h2>
-        <div className="flex flex-col lg:flex-row lg:space-x-12 items-start">
+        <div className="flex flex-col lg:flex-row items-start">
           {/* Contact Form */}
           <motion.div
-            className="w-full lg:w-1/2 mt-8 lg:mt-0"
+            className="w-full mt-8 lg:mx-48"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
