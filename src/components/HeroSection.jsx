@@ -3,7 +3,7 @@ import AnimatedSection from "./AnimatedSection"; // Import your AnimatedSection 
 
 export default function HeroSection() {
   return (
-    <section className="flex md:h-[90vh] lg:h-[100vh] max-md:flex-col items-center justify-between text-white px-6 md:px-20 max-sm:px-2 pt-20">
+    <section className="flex md:h-[90vh] lg:h-[100vh] max-md:flex-col items-center justify-between text-white px-6 md:px-20 max-sm:px-2 pt-20 gap-8">
       {/* Image Section */}
       <AnimatedSection
         className="flex-2 flex items-center justify-center max-md:w-[50%] w-[30%] h-[70%]"
@@ -16,13 +16,13 @@ export default function HeroSection() {
           alt="Muhammad Ashraf"
           width={400}
           height={400}
-          className="rounded-full shadow-lg"
+          className="rounded-full shadow-lg max-sm:w-[200px] max-sm:h-[200px]"
         />
       </AnimatedSection>
 
       {/* Text Section */}
       <AnimatedSection
-        className="flex-1 text-center md:text-left mt-8 md:mt-0 max-sm:m-1 pl-8 pr-8"
+        className="flex-1 text-center md:text-left max-sm:m-1 ml-24"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -85,3 +85,4 @@ export default function HeroSection() {
     </section>
   );
 }
+
