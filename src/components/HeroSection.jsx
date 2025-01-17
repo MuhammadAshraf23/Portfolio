@@ -1,12 +1,11 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
+import AnimatedSection from "./AnimatedSection"; // Import your AnimatedSection component
+
 export default function HeroSection() {
   return (
-    <section className="flex md:h-[90vh] lg:h-[80vh]  max-md:flex-col items-center justify-between text-white px-6 md:px-20 max-sm:px-2 pt-20" >
-        {/* Image Section */}
-        <motion.div
+    <section className="flex md:h-[90vh] lg:h-[100vh] max-md:flex-col items-center justify-between text-white px-6 md:px-20 max-sm:px-2 pt-20">
+      {/* Image Section */}
+      <AnimatedSection
         className="flex-2 flex items-center justify-center max-md:w-[50%] w-[30%] h-[70%]"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -19,10 +18,11 @@ export default function HeroSection() {
           height={400}
           className="rounded-full shadow-lg"
         />
-      </motion.div>
+      </AnimatedSection>
+
       {/* Text Section */}
-      <motion.div
-        className="flex-1 text-center md:text-left mt-8 md:mt-0 max-sm:m-1 ml-10"
+      <AnimatedSection
+        className="flex-1 text-center md:text-left mt-8 md:mt-0 max-sm:m-1 pl-8 pr-8"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -67,27 +67,21 @@ export default function HeroSection() {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4">
-          <motion.a
+          <a
             href="#contact"
             className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
           >
             Contact Me
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="/resume.pdf"
             download
             className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
           >
             Download My Resume
-          </motion.a>
+          </a>
         </div>
-      </motion.div>
-
-    
+      </AnimatedSection>
     </section>
   );
 }
