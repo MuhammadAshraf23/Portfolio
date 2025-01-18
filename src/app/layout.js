@@ -25,9 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {/* Wrap your entire content with ThemeClient */}
-       
+      >      
           <Navbar />
           {children}
        

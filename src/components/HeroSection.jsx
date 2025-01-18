@@ -16,8 +16,11 @@ export default function HeroSection() {
           alt="Muhammad Ashraf"
           width={400}
           height={400}
+          priority
+          quality={100}
           className="rounded-full shadow-lg max-sm:w-[200px] max-sm:h-[200px]"
         />
+
       </AnimatedSection>
 
       {/* Text Section */}

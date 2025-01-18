@@ -1,4 +1,3 @@
-"use client"
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
@@ -13,7 +12,7 @@ export default function Home() {
   return (
     <div className="bg-gray-900">
       <HeroSection />
-      <hr  className="mt-3"/>
+      <hr/>
       <About />
       <hr/>
       <SkillsSection/>
