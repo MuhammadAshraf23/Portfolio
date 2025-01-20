@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -23,16 +23,15 @@ const Contact = () => {
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8">Contact</h2>
-        <div className="flex flex-col lg:flex-row items-start">
-          {/* Contact Form */}
+        <div className="flex justify-center">
           <motion.div
-            className="w-full mt-8 lg:mx-48"
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
+            className="w-full max-w-lg"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           >
             <form
-              action="https://formspree.io/f/xovvrdzj" 
+              action={process.env.NEXT_PUBLIC_FORM}
               method="POST"
               className="bg-gray-800 p-6 rounded shadow-md space-y-4"
             >

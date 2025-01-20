@@ -38,9 +38,6 @@ export default function Navbar() {
         <li>
           <Link href="#experience">Experience</Link>
         </li>
-        {/* <li>
-          <ThemeToggle />
-        </li> */}
       </ul>
 
       {/* Mobile Hamburger Menu */}

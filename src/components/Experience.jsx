@@ -1,5 +1,3 @@
-'use client';
-
 import AnimatedSection from './AnimatedSection'; // Adjust the import path if needed
 
 const experiences = [

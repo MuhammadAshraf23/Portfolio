@@ -6,7 +6,7 @@ export const projects = [
     technologies: ["Next.js", "Firebase", "Redux", "TailwindCSS"],
     liveDemo: "https://baltistanbakingstore.vercel.app/",
     github: "https://github.com/MuhammadAshraf23/Baltistan-baking-Grocery",
-    image: "/images/store.png",
+    image: "/images/projects/store.png",
   },
   {
     title: "Portfolio Website",
@@ -15,7 +15,7 @@ export const projects = [
     technologies: ["Next.js", "Framer Motion"],
     liveDemo: "https://portfolio-demo.com", // Replace with the actual URL
     github: "https://github.com/yourusername/portfolio", // Replace with the actual URL
-    image: "/images/portfolio.png", // Replace with the actual image path
+    image: "/images/projects/portfolio.png", // Replace with the actual image path
   },
   {
     title: "Weather App",
@@ -24,7 +24,7 @@ export const projects = [
     technologies: ["Javascript", "OpenWeather API", "CSS"],
     liveDemo: "https://weather-app-demo.com", // Replace with the actual URL
     github: "https://github.com/MuhammadAshraf23/Weather-App", // Replace with the actual URL
-    image: "/images/weather.png", // Replace with the actual image path
+    image: "/images/projects/weather.png", // Replace with the actual image path
   },
   {
     title: "Attendance App",
@@ -33,7 +33,7 @@ export const projects = [
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
     liveDemo: "https://attendance-app-demo.com", 
     github: "https://github.com/MuhammadAshraf23/attendence-app", 
-    image: "/images/attendance.png", 
+    image: "/images/projects/attendance.png", 
   },
   {
     title: "Internship Website",
@@ -42,6 +42,6 @@ export const projects = [
     technologies: ["React", "MUI"],
     liveDemo: "https://ashraf-interneepk.netlify.app/", 
     github: "https://github.com/MuhammadAshraf23/Internee.pk",
-    image: "/images/internee.png",
+    image: "/images/projects/internee.png",
   },
 ];
