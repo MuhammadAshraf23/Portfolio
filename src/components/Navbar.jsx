@@ -17,7 +17,7 @@ export default function Navbar() {
       {/* Logo Section */}
       <div className="text-2xl font-bold">
         <Image
-        src="/images/logo.png"
+        src="/images/logo.PNG"
         alt="logo"
         width={45}
         height={45}

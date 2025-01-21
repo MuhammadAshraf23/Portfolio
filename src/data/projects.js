@@ -6,7 +6,7 @@ export const projects = [
     technologies: ["Next.js", "Firebase", "Redux", "TailwindCSS"],
     liveDemo: "https://baltistanbakingstore.vercel.app/",
     github: "https://github.com/MuhammadAshraf23/Baltistan-baking-Grocery",
-    image: "/images/projects/store.png",
+    image: "/images/projects/store.PNG",
   },
   {
     title: "Portfolio Website",
@@ -15,7 +15,7 @@ export const projects = [
     technologies: ["Next.js", "Framer Motion"],
     liveDemo: "https://portfolio-demo.com", // Replace with the actual URL
     github: "https://github.com/yourusername/portfolio", // Replace with the actual URL
-    image: "/images/projects/portfolio.png", // Replace with the actual image path
+    image: "/images/projects/portfolio.PNG", // Replace with the actual image path
   },
   {
     title: "Weather App",
@@ -33,7 +33,7 @@ export const projects = [
     technologies: ["MongoDB", "Express.js", "React", "Node.js"],
     liveDemo: "https://attendance-app-demo.com", 
     github: "https://github.com/MuhammadAshraf23/attendence-app", 
-    image: "/images/projects/attendance.png", 
+    image: "/images/projects/attendance.PNG", 
   },
   {
     title: "Internship Website",

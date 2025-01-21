@@ -59,7 +59,7 @@ const Footer = () => {
           {/* Portfolio */}
           <div className="flex items-center space-x-3">
             <Image
-              src="/images/logo.png"
+              src="/images/logo.PNG"
               alt="Portfolio Icon"
               width={24}
               height={24}
