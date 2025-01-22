@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="bg-gray-900">
       <HeroSection />
-      <hr/>
+      <hr className="max-sm:mt-2"/>
       <About />
       <hr/>
       <SkillsSection/>
