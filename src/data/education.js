@@ -2,12 +2,12 @@ export const education = [
     {
       degree: "BS in Computer Science",
       institution: "University of Karachi (UBIT)",
-      year: "2021 - Present",
+      year: "2023 - Present",
     },
     {
       degree: "Intermediate",
       provider: "Govt. Islamia Science College",
-      year: "2023",
+      year: "2022",
     },
     {
       certification: "MERN Stack Developer",

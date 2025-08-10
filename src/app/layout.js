@@ -15,10 +15,11 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Muhammad Ashraf | MERN Stack Developer Portfolio",
+  title: "Muhammad Ashraf | MERN Stack Developer & Full-Stack Web Engineer",
   description:
-    "Explore the portfolio of Muhammad Ashraf, a passionate MERN stack developer. Discover projects, skills, and experience in building stunning web applications using React, Next.js, and more.",
+    "Welcome to the professional portfolio of Muhammad Ashraf — a skilled MERN stack developer specializing in modern web development with MongoDB, Express.js, React, Node.js, and Next.js. Explore innovative projects, technical expertise, and proven experience in building high-performance, scalable, and visually stunning web applications.",
 };
+
 
 export default function RootLayout({ children }) {
   return (

@@ -41,7 +41,7 @@ const Projects = () => {
                         href={project.liveDemo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
+                        class="px-4 py-2 bg-gray-600 hover:bg-gray-700 rounded-lg text-sm"
                       >
                         Live Demo
                       </a>
@@ -49,7 +49,7 @@ const Projects = () => {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
+                       class="px-4 py-2 bg-green-500 hover:bg-green-600 rounded-lg text-sm"
                       >
                         GitHub
                       </a>

@@ -14,7 +14,7 @@ export const projects = [
       "A personal portfolio showcasing my skills, projects, and experience using Next.js and Framer Motion for smooth animations.",
     technologies: ["Next.js", "Framer Motion"],
     liveDemo: "https://portfolio-demo.com", // Replace with the actual URL
-    github: "https://github.com/yourusername/portfolio", // Replace with the actual URL
+    github: "https://github.com/MuhammadAshraf23/Portfolio", // Replace with the actual URL
     image: "/images/projects/portfolio.PNG", // Replace with the actual image path
   },
   {

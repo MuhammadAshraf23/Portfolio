@@ -1,4 +1,10 @@
 export const experiences = [
+{
+  title: "Full Stack Developer",
+  company: "Turingoid",
+  description:
+    "Designed, developed, and optimized dynamic web applications using MySQL, Express.js, React, and Node.js. Collaborated with cross-functional teams to deliver scalable, high-performance solutions with clean architecture, responsive interfaces, and a seamless user experience.",
+},
     {
       title: "MERN Stack Developer",
       company: "Internee.pk",
